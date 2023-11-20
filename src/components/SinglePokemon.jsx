@@ -17,6 +17,7 @@ return (
     <h2>{singlePoke.name}</h2>
     <h3>Height: {singlePoke.height}</h3>
     <h3>Weight: {singlePoke.weight}</h3>
+    {!singlePoke.sprites? <h3>Loading</h3>:<img src= {singlePoke.sprites.front_default}height={'100px'} width={'100px'}/>}
     <div id = "special-data">
         <div className="single-data">
             <h3>Abilities </h3>
